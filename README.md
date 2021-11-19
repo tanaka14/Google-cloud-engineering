@@ -4,16 +4,15 @@
 
 I personally put together a guide to help with cloud functions and actions, 
 
---> This Repo is Just for Educational Purposes and Personal Reminder for Google Cloud Skills 
+- This Repo is Just for Educational Purposes and Personal Reminder for Google Cloud Skills 
+
 
 ### Things to Find
 
-this is how the structure will look for almost all Folders
+This is how the structure will look for almost all Folders
 
 
-- [`--PDF for Concept Explanation`](#--PDF for Concept Explanation)
-- [MD File with a Practise Lab](#MD File with a Practise Lab)
-`--PDF for Concept Explanation`
-`--MD File with a Practise Lab`
+- `--PDF for Concept Explanation`
+- `--MD File with a Practise Lab`
 
 Enjoy......THE ClOUD ☁🔥🔥🔥✅
