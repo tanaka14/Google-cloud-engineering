@@ -1,9 +1,9 @@
 # BuildKit
 
-[![GoDoc](https://godoc.org/github.com/moby/buildkit?status.svg)]
-[![Build Status](https://github.com/moby/buildkit/workflows/build/badge.svg)]
-[![Go Report Card](https://goreportcard.com/badge/github.com/moby/buildkit)]
-[![codecov](https://codecov.io/gh/moby/buildkit/branch/master/graph/badge.svg)]
+![GoDoc](https://godoc.org/github.com/moby/buildkit?status.svg)
+![Build Status](https://github.com/moby/buildkit/workflows/build/badge.svg)
+![Go Report Card](https://goreportcard.com/badge/github.com/moby/buildkit)
+![codecov](https://codecov.io/gh/moby/buildkit/branch/master/graph/badge.svg)
 
 
 
