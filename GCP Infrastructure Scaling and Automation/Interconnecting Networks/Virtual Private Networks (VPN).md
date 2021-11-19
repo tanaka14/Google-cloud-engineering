@@ -10,7 +10,7 @@
 
 Here We establish VPN tunnels between two networks in separate regions such that a VM in one network can ping a VM in the other network over its internal IP address.
 
-## OBjectives
+## Objectives
 
 The objective is to know how to perform the following tasks:
 
@@ -22,12 +22,12 @@ The objective is to know how to perform the following tasks:
 
 
 
-## Task 1:  Explore or Create the networks and instances
+# Task 1:  Explore or Create the networks and instances
 
 Two custom networks with VM instances have been configured for you. if not create them, For the purposes of the lab, both networks are VPC networks within a Google Cloud project. However, in a real-world application, one of these networks might be in a different Google Cloud project, on-premises, or in a different cloud.
 
 
-# - Explore the networks
+### - Explore the networks
 
 Verify that vpn-network-1 and vpn-network-2 have been created with subnets in separate regions.
 
@@ -38,7 +38,7 @@ Verify that vpn-network-1 and vpn-network-2 have been created with subnets in se
     - Note the vpn-network-2 network and its subnet-b in europe-west1.
 
 
-# - Explore the firewall rules
+### - Explore the firewall rules
 
 1. In the navigation pane, click Firewall.
 
@@ -47,7 +47,7 @@ Verify that vpn-network-1 and vpn-network-2 have been created with subnets in se
 
 These firewall rules allow SSH and ICMP traffic from anywhere.
 
-# - Explore the instances and their connectivity
+### - Explore the instances and their connectivity
 
 Currently, the VPN connection between the two networks is not established. Explore the connectivity options between the instances in the networks.
 
@@ -67,7 +67,10 @@ $ ping -c 3 <Enter server-2's external IP address here>
 
 6. To test connectivity to server-2's internal IP address, run the following command, replacing server-2's internal IP address with the value noted earlier:
 
-Code -> [ ping -c 3 <Enter server-2's internal IP address here> ]
+```bash
+$  ping -c 3 <Enter server-2's internal IP address here>
+```
+
 
 *You should see 100% packet loss when pinging the internal IP address because you don't have VPN connectivity yet.
 
