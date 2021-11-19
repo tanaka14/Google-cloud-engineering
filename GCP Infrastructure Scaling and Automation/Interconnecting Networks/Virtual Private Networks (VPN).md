@@ -58,6 +58,7 @@ Currently, the VPN connection between the two networks is not established. Explo
 
 5. To test connectivity to server-2's external IP address, run the following command, replacing server-2's external IP address with the value noted earlier:
 
+
 ```bash
 $ ping -c 3 <Enter server-2's external IP address here>
 ```
@@ -65,35 +66,49 @@ $ ping -c 3 <Enter server-2's external IP address here>
 
 `This works because the VM instances can communicate over the internet.`
 
+
+
+
 6. To test connectivity to server-2's internal IP address, run the following command, replacing server-2's internal IP address with the value noted earlier:
 
 ```bash
 $  ping -c 3 <Enter server-2's internal IP address here>
 ```
 
+`You should see 100% packet loss when pinging the internal IP address because you don't have VPN connectivity yet.`
 
-*You should see 100% packet loss when pinging the internal IP address because you don't have VPN connectivity yet.
+
+
 
 7. Exit the SSH terminal.
-    Let's try the same from server-2.
+    `Let's try the same from server-2.`
+
 
 8. Note the external and internal IP addresses for server-1.
 
+
 9. For server-2, click SSH to launch a terminal and connect.
+
 
 10. To test connectivity to server-1's external IP address, run the following command, replacing server-1's external IP address with the value noted earlier:
 
-Code -> [ ping -c 3 <Enter server-1's external IP address here> ]
+
+```bash
+$  ping -c 3 <Enter server-1's external IP address here>
+```
 
 11. To test connectivity to server-1's internal IP address, run the following command, replacing server-1's internal IP address with the value noted earlier:
 
-Code -> [ ping -c 3 <Enter server-1's internal IP address here> ]
+```bash
+$  ping -c 3 <Enter server-1's internal IP address here>
+```
 
-*You should see similar results.
+`--You should see similar results.`
+
 
 12. Exit the SSH terminal.
 
-*Why are we testing both server-1 to server-2 and server-2 to server-1?
+:information_source: Why are we testing both server-1 to server-2 and server-2 to server-1?
 
 For the purposes of this lab, the path from subnet-a to subnet-b is not the same as the path from subnet-b to subnet-a. You are using one tunnel to pass traffic in each direction. And if both tunnels are not established, you won't be able to ping the remote server on its internal IP address. The ping might reach the remote server, but the response can't be returned.
 
