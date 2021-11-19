@@ -7,6 +7,26 @@
 
 
 
+
+- [Used by](#used-by)
+- [Quick start](#quick-start)
+  - [Starting the `buildkitd` daemon:](#starting-the-buildkitd-daemon)
+  - [Exploring LLB](#exploring-llb)
+  - [Exploring Dockerfiles](#exploring-dockerfiles)
+    - [Building a Dockerfile with `buildctl`](#building-a-dockerfile-with-buildctl)
+    - [Building a Dockerfile using external frontend:](#building-a-dockerfile-using-external-frontend)
+    - [Building a Dockerfile with experimental features like `RUN --mount=type=(bind|cache|tmpfs|secret|ssh)`](#building-a-dockerfile-with-experimental-features-like-run---mounttypebindcachetmpfssecretssh)
+  - [Output](#output)
+    - [Image/Registry](#imageregistry)
+    - [Local directory](#local-directory)
+    - [Docker tarball](#docker-tarball)
+    - [OCI tarball](#oci-tarball)
+    - [containerd image store](#containerd-image-store)
+- [Cache](#cache)
+  - [Garbage collection](#garbage-collection)
+
+
+
  ## Information
 
 :information_source: If you are visiting this repo for the usage of BuildKit-only Dockerfile features like `RUN --mount=type=(bind|cache|tmpfs|secret|ssh)`, please refer to [`frontend/dockerfile/docs/syntax.md`](frontend/dockerfile/docs/syntax.md).
