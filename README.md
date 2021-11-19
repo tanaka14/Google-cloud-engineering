@@ -10,6 +10,9 @@ I personally put together a guide to help with cloud functions and actions,
 
 this is how the structure will look for almost all Folders
 
+
+- [`--PDF for Concept Explanation`](#--PDF for Concept Explanation)
+- [MD File with a Practise Lab](#MD File with a Practise Lab)
 `--PDF for Concept Explanation`
 `--MD File with a Practise Lab`
 
