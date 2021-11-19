@@ -58,8 +58,10 @@ Currently, the VPN connection between the two networks is not established. Explo
 
 5. To test connectivity to server-2's external IP address, run the following command, replacing server-2's external IP address with the value noted earlier:
 
+```bash
+$ ping -c 3 <Enter server-2's external IP address here>
+```
 
-Code -> [ ping -c 3 <Enter server-2's external IP address here> ]
 
 *This works because the VM instances can communicate over the internet.
 
