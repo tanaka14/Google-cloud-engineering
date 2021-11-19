@@ -63,7 +63,7 @@ $ ping -c 3 <Enter server-2's external IP address here>
 ```
 
 
-*This works because the VM instances can communicate over the internet.
+`This works because the VM instances can communicate over the internet.`
 
 6. To test connectivity to server-2's internal IP address, run the following command, replacing server-2's internal IP address with the value noted earlier:
 
