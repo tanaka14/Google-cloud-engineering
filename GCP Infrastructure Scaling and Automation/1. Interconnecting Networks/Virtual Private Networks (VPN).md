@@ -193,6 +193,26 @@ Make sure to replace [VPN-2-STATIC-IP] with your reserved IP address for europe-
 6. Click command line.
   *The gcloud command line window shows the gcloud commands to create the VPN gateway and VPN tunnels and it illustrates that three forwarding rules are also created.
 
+  `
+gcloud compute target-vpn-gateways create vpn-1 --project=qwiklabs-gcp-04-1e6d94effc13 --region=us-central1 --network=vpn-network-1
+
+$
+gcloud compute forwarding-rules create vpn-1-rule-esp --project=qwiklabs-gcp-04-1e6d94effc13 --region=us-central1 --address=35.232.202.92 --ip-protocol=ESP --target-vpn-gateway=vpn-1
+
+$
+gcloud compute forwarding-rules create vpn-1-rule-udp500 --project=qwiklabs-gcp-04-1e6d94effc13 --region=us-central1 --address=35.232.202.92 --ip-protocol=UDP --ports=500 --target-vpn-gateway=vpn-1
+
+$
+gcloud compute forwarding-rules create vpn-1-rule-udp4500 --project=qwiklabs-gcp-04-1e6d94effc13 --region=us-central1 --address=35.232.202.92 --ip-protocol=UDP --ports=4500 --target-vpn-gateway=vpn-1
+
+$
+gcloud compute vpn-tunnels create tunnel1to2 --project=qwiklabs-gcp-04-1e6d94effc13 --region=us-central1 --peer-address=35.205.43.117 --shared-secret=gcprocks --ike-version=2 --local-traffic-selector=0.0.0.0/0 --remote-traffic-selector=0.0.0.0/0 --target-vpn-gateway=vpn-1
+
+$
+gcloud compute routes create tunnel1to2-route-1 --project=qwiklabs-gcp-04-1e6d94effc13 --network=vpn-network-1 --priority=1000 --destination-range=10.1.3.0/24 --next-hop-vpn-tunnel=tunnel1to2 --next-hop-vpn-tunnel-region=us-central1
+`
+
+
 7. Click Close.
 8. Click Create.
 
