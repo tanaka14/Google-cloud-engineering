@@ -312,7 +312,9 @@ The output should look like this (do not copy; this is example output):
 
 <h1>Internal Load Balancing Lab</h1><h2>Client IP</h2>Your IP address : 10.10.20.50<h2>Hostname</h2>Server Hostname:
  instance-group-2-q5wp<h2>Server Location</h2>Region and Zone: us-central1-b
-Copied!
+
+
+
 Which of these fields identify the location of the backend?
 
 Server Location
